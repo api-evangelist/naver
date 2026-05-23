@@ -1,0 +1,405 @@
+aid: naver
+name: Naver
+description: |
+  Naver Corp. is South Korea's largest internet company,
+  operating the Naver search portal, Naver Webtoon, Naver Pay,
+  Naver Maps, Naver Shopping, WORKS Mobile, and the LINE
+  messenger platform (jointly with SoftBank via LY Corporation).
+  Naver runs two distinct public developer surfaces: Naver
+  Developers (developers.naver.com) which hosts Naver's classic
+  Open APIs — Search (blog, news, book, encyclopedia, café,
+  knowledge, web, image, shop, doc), Papago N2MT translation,
+  Naver Login (OAuth 2.0), Naver Maps geocoding and static map,
+  Datalab trend, CAPTCHA, and SmartEditor; and Naver Cloud
+  Platform (www.ncloud.com) — Naver's IaaS / PaaS offering with
+  Compute (Server, Container, Functions), Storage (Object,
+  Block, File), Network (VPC, CDN+, Global Edge), AI (CLOVA
+  Speech, CLOVA OCR, Papago, HyperCLOVA X), Maps, SENS (SMS /
+  push messaging), Cloud Search, and Certificate Manager.
+type: Index
+position: Provider
+access: Public
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Search
+  - Translation
+  - Maps
+  - Cloud Platform
+  - AI
+  - Korea
+  - OAuth2
+  - SMS
+  - OCR
+  - Webtoon
+url: https://raw.githubusercontent.com/api-evangelist/naver/refs/heads/main/apis.yml
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.20'
+apis:
+  - aid: naver:search
+    name: Naver Search Open API
+    description: |
+      Naver Search API returns search results across Naver's
+      catalogs: blog, news, book, encyclopedia, café article,
+      knowledge-in (Kin), web document, image, shopping product,
+      and academic document. Each catalog has its own endpoint
+      and shares a common JSON / XML response envelope.
+    humanURL: https://developers.naver.com/docs/serviceapi/search/blog/blog.md
+    baseURL: https://openapi.naver.com
+    tags:
+      - Search
+      - Blog
+      - News
+      - Books
+      - Images
+      - Shopping
+    properties:
+      - type: Documentation
+        url: https://developers.naver.com/docs/serviceapi/search/blog/blog.md
+  - aid: naver:papago-translation
+    name: Naver Papago Translation (N2MT) API
+    description: |
+      Papago is Naver's neural machine translation service. The
+      Papago N2MT API performs text translation across Korean,
+      English, Japanese, Chinese (Simplified / Traditional),
+      Spanish, French, German, Russian, Vietnamese, Thai,
+      Indonesian, and other languages.
+    humanURL: https://developers.naver.com/docs/papago/papago-nmt-overview.md
+    baseURL: https://openapi.naver.com
+    tags:
+      - Translation
+      - NMT
+      - AI
+      - Papago
+    properties:
+      - type: Documentation
+        url: https://developers.naver.com/docs/papago/papago-nmt-overview.md
+  - aid: naver:papago-detect-language
+    name: Naver Papago Language Detection API
+    description: |
+      Papago Language Detection identifies the source language of
+      a text snippet, used to drive automatic translation routing.
+    humanURL: https://developers.naver.com/docs/papago/papago-detectlangs-overview.md
+    baseURL: https://openapi.naver.com
+    tags:
+      - Translation
+      - Detection
+      - Papago
+    properties:
+      - type: Documentation
+        url: https://developers.naver.com/docs/papago/papago-detectlangs-overview.md
+  - aid: naver:login
+    name: Naver Login (OAuth 2.0) API
+    description: |
+      Naver Login is an OAuth 2.0 identity provider used by
+      Korean web and mobile apps to authenticate users with their
+      Naver account and access basic profile attributes.
+    humanURL: https://developers.naver.com/docs/login/api/api.md
+    baseURL: https://nid.naver.com
+    tags:
+      - Identity
+      - OAuth2
+      - Login
+      - Korea
+    properties:
+      - type: Documentation
+        url: https://developers.naver.com/docs/login/api/api.md
+  - aid: naver:datalab
+    name: Naver Datalab API
+    description: |
+      Datalab API exposes search-volume trend data for keywords
+      across Naver Search and Naver Shopping over user-defined
+      time windows, demographic slices, and category filters.
+    humanURL: https://developers.naver.com/docs/serviceapi/datalab/search/search.md
+    baseURL: https://openapi.naver.com
+    tags:
+      - Analytics
+      - Trends
+      - Search
+      - Shopping
+    properties:
+      - type: Documentation
+        url: https://developers.naver.com/docs/serviceapi/datalab/search/search.md
+  - aid: naver:short-url
+    name: Naver Shortener (me2.do) API
+    description: |
+      The me2.do URL shortener API converts long URLs into Naver
+      short links for sharing across messaging and social
+      channels.
+    humanURL: https://developers.naver.com/docs/utils/shortenurl/
+    baseURL: https://openapi.naver.com
+    tags:
+      - URL Shortener
+      - Utility
+    properties:
+      - type: Documentation
+        url: https://developers.naver.com/docs/utils/shortenurl/
+  - aid: naver:captcha
+    name: Naver CAPTCHA API
+    description: |
+      The CAPTCHA API issues image-based human-verification
+      challenges and validates user responses, used by Korean
+      sites to prevent bot abuse.
+    humanURL: https://developers.naver.com/docs/utils/captcha/
+    baseURL: https://openapi.naver.com
+    tags:
+      - CAPTCHA
+      - Bot Mitigation
+      - Security
+    properties:
+      - type: Documentation
+        url: https://developers.naver.com/docs/utils/captcha/
+  - aid: naver:smarteditor
+    name: Naver SmartEditor 2 API
+    description: |
+      SmartEditor 2 is Naver's embeddable rich-text editor for
+      blog and CMS-style applications. The integration API exposes
+      attachment uploads, image processing, and editor lifecycle.
+    humanURL: https://developers.naver.com/docs/utils/smarteditor2/
+    baseURL: https://openapi.naver.com
+    tags:
+      - Editor
+      - CMS
+      - Rich Text
+    properties:
+      - type: Documentation
+        url: https://developers.naver.com/docs/utils/smarteditor2/
+  - aid: naver:maps-web
+    name: Naver Maps (Web) API
+    description: |
+      The Naver Maps Web API embeds Korean street-level mapping,
+      markers, polylines, and geocoding in third-party web
+      applications. (Naver Cloud Platform's Maps API hosts the
+      production-grade map and directions service.)
+    humanURL: https://navermaps.github.io/maps.js.ncp/
+    baseURL: https://oapi.map.naver.com
+    tags:
+      - Maps
+      - Geocoding
+      - Korea
+    properties:
+      - type: Documentation
+        url: https://navermaps.github.io/maps.js.ncp/
+  - aid: naver-cloud:maps
+    name: Naver Cloud Platform Maps API
+    description: |
+      Naver Cloud Platform Maps exposes geocoding, reverse
+      geocoding, directions (driving / walking / public transit),
+      static map images, and the dynamic JavaScript map tile
+      service for Korean addresses and POIs.
+    humanURL: https://api.ncloud-docs.com/docs/ai-naver-mapsgeocoding
+    baseURL: https://maps.apigw.ntruss.com
+    tags:
+      - Maps
+      - Geocoding
+      - Directions
+      - Korea
+    properties:
+      - type: Documentation
+        url: https://api.ncloud-docs.com/docs/ai-naver-mapsgeocoding
+  - aid: naver-cloud:papago
+    name: Naver Cloud Platform Papago APIs
+    description: |
+      The Papago service group on Naver Cloud Platform packages
+      production-grade NMT translation, language detection,
+      Korean name romanization, and Papago Image Translation.
+    humanURL: https://api.ncloud-docs.com/docs/ai-naver-papagonmt
+    baseURL: https://naveropenapi.apigw.ntruss.com
+    tags:
+      - Translation
+      - NMT
+      - Papago
+      - AI
+    properties:
+      - type: Documentation
+        url: https://api.ncloud-docs.com/docs/ai-naver-papagonmt
+  - aid: naver-cloud:clova-ocr
+    name: Naver Cloud CLOVA OCR API
+    description: |
+      CLOVA OCR detects and extracts text from images and
+      documents — supporting general OCR, document-template OCR
+      for IDs / receipts / business cards, and structured key /
+      value extraction.
+    humanURL: https://api.ncloud-docs.com/docs/ai-application-service-ocr
+    baseURL: https://*.apigw.ntruss.com
+    tags:
+      - OCR
+      - Vision
+      - AI
+      - Documents
+    properties:
+      - type: Documentation
+        url: https://api.ncloud-docs.com/docs/ai-application-service-ocr
+  - aid: naver-cloud:clova-speech
+    name: Naver Cloud CLOVA Speech API
+    description: |
+      CLOVA Speech provides Korean-first speech-to-text (STT) and
+      Korean speech synthesis (TTS / Premium Voice) APIs for
+      contact-center, captioning, and voice-app workloads.
+    humanURL: https://api.ncloud-docs.com/docs/ai-application-service-clovaspeech
+    baseURL: https://clovaspeech-gw.ncloud.com
+    tags:
+      - Speech
+      - STT
+      - TTS
+      - Korean
+      - CLOVA
+    properties:
+      - type: Documentation
+        url: https://api.ncloud-docs.com/docs/ai-application-service-clovaspeech
+  - aid: naver-cloud:hyperclova-x
+    name: Naver Cloud HyperCLOVA X API
+    description: |
+      HyperCLOVA X is Naver's Korean-language large language
+      model. The HyperCLOVA X API exposes chat completion,
+      embeddings, summarization, and tool-use endpoints for
+      Korean-first generative AI applications.
+    humanURL: https://api.ncloud-docs.com/docs/clovastudio-overview
+    baseURL: https://clovastudio.stream.ntruss.com
+    tags:
+      - LLM
+      - Generative AI
+      - Korean
+      - HyperCLOVA
+    properties:
+      - type: Documentation
+        url: https://api.ncloud-docs.com/docs/clovastudio-overview
+  - aid: naver-cloud:sens
+    name: Naver Cloud SENS Messaging API
+    description: |
+      SENS (Simple & Easy Notification Service) sends SMS, LMS,
+      MMS, Alimtalk (KakaoTalk channel), Friend Talk, and push
+      notifications to Korean recipients.
+    humanURL: https://api.ncloud-docs.com/docs/ai-application-service-sens
+    baseURL: https://sens.apigw.ntruss.com
+    tags:
+      - Messaging
+      - SMS
+      - Push
+      - KakaoTalk
+      - Korea
+    properties:
+      - type: Documentation
+        url: https://api.ncloud-docs.com/docs/ai-application-service-sens
+  - aid: naver-cloud:object-storage
+    name: Naver Cloud Object Storage API
+    description: |
+      Object Storage is Naver Cloud Platform's S3-compatible
+      object store for unstructured data, with public read /
+      versioning / lifecycle / CDN-origin support.
+    humanURL: https://api.ncloud-docs.com/docs/storage-objectstorage
+    baseURL: https://kr.object.ncloudstorage.com
+    tags:
+      - Storage
+      - S3
+      - Object
+    properties:
+      - type: Documentation
+        url: https://api.ncloud-docs.com/docs/storage-objectstorage
+  - aid: naver-cloud:server
+    name: Naver Cloud Server (Compute) API
+    description: |
+      Server is Naver Cloud Platform's IaaS compute service, with
+      VPC and Classic deployments, GPU and bare-metal options,
+      and standard create / scale / snapshot / image management
+      APIs.
+    humanURL: https://api.ncloud-docs.com/docs/compute-server
+    baseURL: https://ncloud.apigw.ntruss.com
+    tags:
+      - Compute
+      - Server
+      - IaaS
+      - VPC
+    properties:
+      - type: Documentation
+        url: https://api.ncloud-docs.com/docs/compute-server
+  - aid: naver-cloud:cdn-plus
+    name: Naver Cloud CDN+ / Global Edge API
+    description: |
+      CDN+ and Global Edge are Naver Cloud Platform's Korean and
+      global content delivery services, with cache configuration,
+      purge, and traffic-reporting APIs.
+    humanURL: https://api.ncloud-docs.com/docs/networking-cdn
+    baseURL: https://ncloud.apigw.ntruss.com
+    tags:
+      - CDN
+      - Edge
+      - Performance
+    properties:
+      - type: Documentation
+        url: https://api.ncloud-docs.com/docs/networking-cdn
+features:
+  - name: Naver Developers Open APIs
+    description: Free public APIs for Search, Papago translation, Naver Login, Maps, Datalab, and SmartEditor.
+  - name: Naver Cloud Platform
+    description: Full-stack Korean cloud with Compute, Storage, Network, AI (CLOVA, HyperCLOVA X, Papago), Maps, and SENS messaging.
+  - name: HyperCLOVA X LLM
+    description: Korean-first generative AI exposed through Naver Cloud's CLOVA Studio API.
+  - name: Korean Address & Map Coverage
+    description: Strongest geocoding and POI dataset for South Korea, ahead of global mapping providers in-market.
+  - name: KakaoTalk Channel Messaging via SENS
+    description: SENS supports KakaoTalk Alimtalk / Friend Talk delivery alongside SMS and push.
+useCases:
+  - name: Korean Market Search Integration
+    description: Display Naver search results, blog posts, news, and shopping items in third-party apps.
+  - name: Multilingual Translation
+    description: Translate Korean ↔ English / Japanese / Chinese / Vietnamese text using Papago.
+  - name: Korean OCR Workflows
+    description: Extract structured data from Korean IDs, receipts, and business documents via CLOVA OCR.
+  - name: Korean LLM Applications
+    description: Build Korean-language chatbots, summarizers, and copilots on HyperCLOVA X.
+  - name: Korean SMS / Alimtalk Delivery
+    description: Send transactional SMS, LMS, and KakaoTalk Alimtalk messages via SENS.
+integrations:
+  - name: Naver Login
+  - name: Naver Pay
+  - name: Naver Shopping
+  - name: Naver Maps
+  - name: KakaoTalk Alimtalk
+  - name: LINE Messaging
+  - name: AWS S3 (compatible)
+authentication:
+  - type: APIKey
+    description: Naver Developers Open APIs authenticate with X-Naver-Client-Id and X-Naver-Client-Secret headers from a registered application.
+  - type: OAuth2
+    description: Naver Login uses OAuth 2.0 authorization code flow with user-granted scopes.
+  - type: AccessKey
+    description: Naver Cloud Platform APIs authenticate with NCP Access Key ID and Secret Key, signed per request with HMAC-SHA256.
+common:
+  - type: CorporateWebsite
+    url: https://www.navercorp.com/
+  - type: ConsumerPortal
+    url: https://www.naver.com/
+  - type: DeveloperPortal
+    url: https://developers.naver.com/main/
+  - type: NaverCloudPlatform
+    url: https://www.ncloud.com/
+  - type: NaverCloudDocs
+    url: https://api.ncloud-docs.com/docs/home
+  - type: HyperCLOVAStudio
+    url: https://clovastudio.ncloud.com/
+  - type: PapagoConsumer
+    url: https://papago.naver.com/
+  - type: NaverMaps
+    url: https://map.naver.com/
+  - type: NaverShopping
+    url: https://shopping.naver.com/
+  - type: NaverPay
+    url: https://new-m.pay.naver.com/
+  - type: NaverWebtoon
+    url: https://comic.naver.com/
+  - type: GitHub
+    url: https://github.com/naver
+  - type: TechBlog
+    url: https://d2.naver.com/home
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/naver-corporation/
+  - type: InvestorRelations
+    url: https://www.navercorp.com/en/investment
+  - type: Newsroom
+    url: https://www.navercorp.com/en/news
+  - type: Careers
+    url: https://recruit.navercorp.com/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
