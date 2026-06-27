@@ -366,7 +366,7 @@ authentication:
   - type: AccessKey
     description: Naver Cloud Platform APIs authenticate with NCP Access Key ID and Secret Key, signed per request with HMAC-SHA256.
 common:
-  - type: CorporateWebsite
+  - type: Website
     url: https://www.navercorp.com/
   - type: ConsumerPortal
     url: https://www.naver.com/
