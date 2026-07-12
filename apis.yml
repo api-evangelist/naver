@@ -366,6 +366,8 @@ authentication:
   - type: AccessKey
     description: Naver Cloud Platform APIs authenticate with NCP Access Key ID and Secret Key, signed per request with HMAC-SHA256.
 common:
+  - type: DomainSecurity
+    url: security/naver-domain-security.yml
   - type: Website
     url: https://www.navercorp.com/
   - type: ConsumerPortal
@@ -400,6 +402,8 @@ common:
     url: https://www.navercorp.com/en/news
   - type: Careers
     url: https://recruit.navercorp.com/
+  - type: Blog
+    url: https://d2.naver.com/d2.atom
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
