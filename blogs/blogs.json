@@ -1,0 +1,21 @@
+{
+  "repo": "naver",
+  "feeds": [
+    {
+      "source": "https://d2.naver.com/d2.atom",
+      "feed_url": "https://d2.naver.com/d2.atom",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://recruit.navercorp.com/",
+      "feed_url": "https://recruit.navercorp.com/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 21
+}
