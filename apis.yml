@@ -17,9 +17,21 @@ description: |
   Speech, CLOVA OCR, Papago, HyperCLOVA X), Maps, SENS (SMS /
   push messaging), Cloud Search, and Certificate Manager.
 type: Index
+accessModel:
+  pricing: free
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Free
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
 position: Provider
 access: Public
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/naver.png
 tags:
   - Search
   - Translation
