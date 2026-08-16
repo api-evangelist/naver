@@ -5,7 +5,7 @@
       "source": "https://d2.naver.com/d2.atom",
       "feed_url": "https://d2.naver.com/d2.atom",
       "title": "",
-      "saved": 0,
+      "saved": 2,
       "method": "feed"
     },
     {
@@ -13,9 +13,10 @@
       "feed_url": "https://recruit.navercorp.com/",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     }
   ],
-  "fetched": "2026-08-06T14:08:46Z",
-  "post_count": 25
+  "fetched": "2026-08-15T12:11:08Z",
+  "post_count": 27
 }
