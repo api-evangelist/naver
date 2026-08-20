@@ -37,6 +37,17 @@ tags:
   - Translation
   - Maps
   - Cloud Platform
+  - Artificial Intelligence
+  - Korea
+  - Authentication
+  - SMS
+  - OCR
+  - Webtoon
+tags_raw:
+  - Search
+  - Translation
+  - Maps
+  - Cloud Platform
   - AI
   - Korea
   - OAuth2
@@ -63,6 +74,13 @@ apis:
       - Blog
       - News
       - Books
+      - Image
+      - Shopping
+    tags_raw:
+      - Search
+      - Blog
+      - News
+      - Books
       - Images
       - Shopping
     properties:
@@ -79,6 +97,11 @@ apis:
     humanURL: https://developers.naver.com/docs/papago/papago-nmt-overview.md
     baseURL: https://openapi.naver.com
     tags:
+      - Translation
+      - NMT
+      - Artificial Intelligence
+      - Papago
+    tags_raw:
       - Translation
       - NMT
       - AI
@@ -109,6 +132,11 @@ apis:
     humanURL: https://developers.naver.com/docs/login/api/api.md
     baseURL: https://nid.naver.com
     tags:
+      - Identity
+      - Authentication
+      - Login
+      - Korea
+    tags_raw:
       - Identity
       - OAuth2
       - Login
@@ -221,6 +249,11 @@ apis:
       - Translation
       - NMT
       - Papago
+      - Artificial Intelligence
+    tags_raw:
+      - Translation
+      - NMT
+      - Papago
       - AI
     properties:
       - type: Documentation
@@ -235,6 +268,11 @@ apis:
     humanURL: https://api.ncloud-docs.com/docs/ai-application-service-ocr
     baseURL: https://*.apigw.ntruss.com
     tags:
+      - OCR
+      - Vision
+      - Artificial Intelligence
+      - Documents
+    tags_raw:
       - OCR
       - Vision
       - AI
@@ -318,6 +356,11 @@ apis:
     humanURL: https://api.ncloud-docs.com/docs/compute-server
     baseURL: https://ncloud.apigw.ntruss.com
     tags:
+      - Compute
+      - Server
+      - Infrastructure-as-a-Service
+      - VPC
+    tags_raw:
       - Compute
       - Server
       - IaaS
