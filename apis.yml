@@ -369,7 +369,7 @@ apis:
     tags:
       - Compute
       - Server
-      - Infrastructure-as-a-Service
+      - IaaS
       - VPC
     tags_raw:
       - Compute
