@@ -49,7 +49,7 @@ tags:
   - Maps
   - Cloud Platform
   - Artificial Intelligence
-  - Korea
+  - South Korea
   - Authentication
   - SMS
   - OCR
@@ -146,7 +146,7 @@ apis:
       - Identity
       - Authentication
       - Login
-      - Korea
+      - South Korea
     tags_raw:
       - Identity
       - OAuth2
@@ -180,6 +180,9 @@ apis:
     humanURL: https://developers.naver.com/docs/utils/shortenurl/
     baseURL: https://openapi.naver.com
     tags:
+      - URL Shorteners
+      - Utility
+    tags_raw:
       - URL Shortener
       - Utility
     properties:
@@ -227,6 +230,10 @@ apis:
     tags:
       - Maps
       - Geocoding
+      - South Korea
+    tags_raw:
+      - Maps
+      - Geocoding
       - Korea
     properties:
       - type: Documentation
@@ -241,6 +248,11 @@ apis:
     humanURL: https://api.ncloud-docs.com/docs/ai-naver-mapsgeocoding
     baseURL: https://maps.apigw.ntruss.com
     tags:
+      - Maps
+      - Geocoding
+      - Directions
+      - South Korea
+    tags_raw:
       - Maps
       - Geocoding
       - Directions
@@ -338,6 +350,12 @@ apis:
       - SMS
       - Push
       - KakaoTalk
+      - South Korea
+    tags_raw:
+      - Messaging
+      - SMS
+      - Push
+      - KakaoTalk
       - Korea
     properties:
       - type: Documentation
@@ -368,7 +386,7 @@ apis:
     baseURL: https://ncloud.apigw.ntruss.com
     tags:
       - Compute
-      - Server
+      - Servers
       - Infrastructure-as-a-Service
       - VPC
     tags_raw:
