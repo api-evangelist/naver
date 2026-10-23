@@ -28,19 +28,6 @@
     builder: unknown (not in the directory record)
   status: not-a-workflow
   arazzo: null
-- slug: naver-slack-own
-  label: Slack (own)
-  partner: slack
-  partner_name: Slack (own)
-  category: Slack app
-  type: marketplace
-  marketplace: own
-  channel: partner-built
-  evidence: https://slack.com/marketplace/A05RRBAA370-works-calendar
-  source: edge
-  relationship: platform-app
-  status: not-a-workflow
-  arazzo: null
 - slug: naver-cve-program-cve-numbering-authorities
   label: CVE Program (CVE Numbering Authorities)
   partner_name: CVE Program (CVE Numbering Authorities)
@@ -105,5 +92,31 @@
       names CSIRT / PSIRT / SOC; never a count
     detected_by: sweep-vulnerability-disclosure-cna.py
     detected: '2026-10-22'
+  status: not-a-workflow
+  arazzo: null
+- slug: naver-slack-own
+  label: Slack (own)
+  partner: slack
+  partner_name: Slack (own)
+  category: Slack app
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://slack.com/marketplace/A05RRBAA370-works-calendar
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: naver-hugging-face-hugging-face-hub
+  label: Hugging Face (hugging-face-hub)
+  partner: hugging-face
+  partner_name: Hugging Face (hugging-face-hub)
+  category: Hugging Face Hub datasets
+  type: marketplace
+  marketplace: hugging-face-hub
+  channel: partner-built
+  evidence: https://huggingface.co/naver
+  source: edge
+  relationship: platform-app
   status: not-a-workflow
   arazzo: null

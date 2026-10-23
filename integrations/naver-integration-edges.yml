@@ -25,23 +25,6 @@ edges:
     builder: unknown (not in the directory record)
   detected_by: sweep-workflow-automation.py
   first_seen: '2026-10-15'
-- partner_name: Slack (own)
-  partner: slack
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://slack.com/marketplace/A05RRBAA370-works-calendar
-  mirror_of: slack/integrations/slack-integration-edges.yml
-  apps:
-  - WORKS Calendar
-  listing_count: 1
-  detected: '2026-10-18'
-  detected_by: mirror-platform-listings.py
-  category: Slack app
 - partner_name: CVE Program (CVE Numbering Authorities)
   partner: null
   partner_match: register
@@ -108,6 +91,56 @@ edges:
     detected: '2026-10-22'
   detected_by: sweep-vulnerability-disclosure-cna.py
   first_seen: '2026-10-22'
+- partner_name: Slack (own)
+  partner: slack
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://slack.com/marketplace/A05RRBAA370-works-calendar
+  mirror_of: slack/integrations/slack-integration-edges.yml
+  apps:
+  - WORKS Calendar
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Slack app
+- partner_name: Hugging Face (hugging-face-hub)
+  partner: hugging-face
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: hugging-face-hub
+  evidence: https://huggingface.co/naver
+  mirror_of: hugging-face/integrations/hugging-face-integration-edges.yml
+  apps:
+  - naver/combined_qa_distillation_labels
+  - naver/CUFFS
+  - naver/splade-cocondenser-selfdistil
+  - naver/splade-cocondenser-ensembledistil
+  - naver/splade-v3
+  - naver/efficient-splade-VI-BT-large-doc
+  - naver/MASt3R_ViTLarge_BaseDecoder_512_catmlpdpt_metric
+  - naver/DUSt3R_ViTLarge_BaseDecoder_512_dpt
+  - naver/efficient-splade-VI-BT-large-query
+  - naver/splade_v2_distil
+  - naver/MASt3R
+  - naver/multi-hmr
+  - naver/SuperFeatures
+  - naver/French-SLU-DEMO-Interspeech2024
+  - naver/PUMP
+  listing_count: 3
+  detected: '2026-10-23'
+  detected_by: mirror-platform-listings.py
+  category: Hugging Face Hub datasets
+  badges:
+  - Verified publisher (Hugging Face verified organisation)
 method: searched
 checked:
 - https://zapier.com/api/v4/apps/
@@ -115,5 +148,6 @@ checked:
 - https://api.first.org/data/v1/teams
 - https://raw.githubusercontent.com/CVEProject/cve-website/dev/src/assets/data/CNAsList.json
 - https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json
+- hugging-face/integrations/hugging-face-integration-edges.yml
 source:
 - https://zapier.com/api/v4/apps/
