@@ -1,4 +1,4 @@
-# naver
+# Naver
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,4 +64,119 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Naver — Korea's search + Naver Cloud + LINE + WEBTOON
+Naver Corp. is South Korea's largest internet company, operating the Naver search portal, Naver Webtoon, Naver Pay, Naver Maps, Naver Shopping, WORKS Mobile, and the LINE messenger platform (jointly with SoftBank via LY Corporation). Naver runs two distinct public developer surfaces: Naver Developers (developers.naver.com) which hosts Naver's classic Open APIs — Search (blog, news, book, encyclopedia, café, knowledge, web, image, shop, doc), Papago N2MT translation, Naver Login (OAuth 2.0), Naver Maps geocoding and static map, Datalab trend, CAPTCHA, and SmartEditor; and Naver Cloud Platform (www.ncloud.com) — Naver's IaaS / PaaS offering with Compute (Server, Container, Functions), Storage (Object, Block, File), Network (VPC, CDN+, Global Edge), AI (CLOVA Speech, CLOVA OCR, Papago, HyperCLOVA X), Maps, SENS (SMS / push messaging), Cloud Search, and Certificate Manager.
+
+**Areas:** Search · Translation · Maps · Cloud Platform · Artificial Intelligence · South Korea · Authentication · SMS · OCR · Webtoon
+
+## Naver on APIs.io
+
+Everything profiled for Naver is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/naver/](https://apis.io/providers/naver/)** — or go straight to one of the APIs or properties below.
+
+### APIs (18)
+
+- [Naver Search Open API](https://apis.io/apis/naver/search/) — Naver Search API returns search results across Naver's catalogs: blog, news, book, encyclopedia, café article, knowledge-in (Kin), web document, image,…
+- [Naver Papago Translation (N2MT) API](https://apis.io/apis/naver/papago-translation/) — Papago is Naver's neural machine translation service. The Papago N2MT API performs text translation across Korean, English, Japanese, Chinese (Simplified /…
+- [Naver Papago Language Detection API](https://apis.io/apis/naver/papago-detect-language/) — Papago Language Detection identifies the source language of a text snippet, used to drive automatic translation routing.
+- [Naver Login (OAuth 2.0) API](https://apis.io/apis/naver/login/) — Naver Login is an OAuth 2.0 identity provider used by Korean web and mobile apps to authenticate users with their Naver account and access basic profile…
+- [Naver Datalab API](https://apis.io/apis/naver/datalab/) — Datalab API exposes search-volume trend data for keywords across Naver Search and Naver Shopping over user-defined time windows, demographic slices, and…
+- [Naver Shortener (me2.do) API](https://apis.io/apis/naver/short-url/) — The me2.do URL shortener API converts long URLs into Naver short links for sharing across messaging and social channels.
+- [Naver CAPTCHA API](https://apis.io/apis/naver/captcha/) — The CAPTCHA API issues image-based human-verification challenges and validates user responses, used by Korean sites to prevent bot abuse.
+- [Naver SmartEditor 2 API](https://apis.io/apis/naver/smarteditor/) — SmartEditor 2 is Naver's embeddable rich-text editor for blog and CMS-style applications. The integration API exposes attachment uploads, image processing,…
+- [Naver Maps (Web) API](https://apis.io/apis/naver/maps-web/) — The Naver Maps Web API embeds Korean street-level mapping, markers, polylines, and geocoding in third-party web applications. (Naver Cloud Platform's Maps…
+- [Naver Cloud Platform Maps API](https://apis.io/apis/naver/maps/) — Naver Cloud Platform Maps exposes geocoding, reverse geocoding, directions (driving / walking / public transit), static map images, and the dynamic…
+- [Naver Cloud Platform Papago APIs](https://apis.io/apis/naver/papago/) — The Papago service group on Naver Cloud Platform packages production-grade NMT translation, language detection, Korean name romanization, and Papago Image…
+- [Naver Cloud CLOVA OCR API](https://apis.io/apis/naver/clova-ocr/) — CLOVA OCR detects and extracts text from images and documents — supporting general OCR, document-template OCR for IDs / receipts / business cards, and…
+- [Naver Cloud CLOVA Speech API](https://apis.io/apis/naver/clova-speech/) — CLOVA Speech provides Korean-first speech-to-text (STT) and Korean speech synthesis (TTS / Premium Voice) APIs for contact-center, captioning, and voice-app…
+- [Naver Cloud HyperCLOVA X API](https://apis.io/apis/naver/hyperclova-x/) — HyperCLOVA X is Naver's Korean-language large language model. The HyperCLOVA X API exposes chat completion, embeddings, summarization, and tool-use…
+- [Naver Cloud SENS Messaging API](https://apis.io/apis/naver/sens/) — SENS (Simple & Easy Notification Service) sends SMS, LMS, MMS, Alimtalk (KakaoTalk channel), Friend Talk, and push notifications to Korean recipients.
+- [Naver Cloud Object Storage API](https://apis.io/apis/naver/object-storage/) — Object Storage is Naver Cloud Platform's S3-compatible object store for unstructured data, with public read / versioning / lifecycle / CDN-origin support.
+- [Naver Cloud Server (Compute) API](https://apis.io/apis/naver/server/) — Server is Naver Cloud Platform's IaaS compute service, with VPC and Classic deployments, GPU and bare-metal options, and standard create / scale / snapshot…
+- [Naver Cloud CDN+ / Global Edge API](https://apis.io/apis/naver/cdn-plus/) — CDN+ and Global Edge are Naver Cloud Platform's Korean and global content delivery services, with cache configuration, purge, and traffic-reporting APIs.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Naver Domain Security](https://apis.io/security/naver/naver-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Naver Plans Pricing](https://apis.io/plans/naver/naver-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Naver Rate Limits](https://apis.io/rate-limits/naver/naver-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Naver Finops](https://apis.io/finops/naver/naver-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.navercorp.com/)
+- [Blog](https://d2.naver.com/d2.atom)
+
+## API Evangelist rating
+
+**Kin Score 11.6** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 72.3 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 5.3 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 4.7** — Telecommunications
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/naver/](https://apis.io/providers/naver/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Naver: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/naver/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
